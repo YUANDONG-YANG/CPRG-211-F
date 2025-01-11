@@ -1,17 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using Helpers;
-using MyProject.Helpers;
+﻿using System.Reflection;
+using MyCSharpProject.Helpers;
 
 class Program
 {
     static void Main(string[] args)
     {
         //TODO The current code belongs to Task 1-3 and can be used without comments.
-        
+        // Task1to3();
+        //TODO The current code belongs to Additional task!!.
+        AdditionalTask();
+    }
+    static void Task1to3()
+    {
         // Task 1: Create variables
         Console.WriteLine("Task 1: Create variables\n");
         int low = GetValidatedInput("Please enter a lower value (positive integer)： ", positiveOnly: true);
@@ -42,7 +42,7 @@ class Program
             Console.WriteLine("Unable to find project root directory。");
             return;
         }
-        
+
         // Set the file path to the project root directory
         string filePath = Path.Combine(projectRoot, "numbers.txt");
 
@@ -75,88 +75,72 @@ class Program
         // 等待用户按回车键后退出
         Console.WriteLine("\nPress Enter to exit.");
         Console.ReadLine();
-        // 显示当前工作目录
-            Console.WriteLine($"当前工作目录: {Environment.CurrentDirectory}\n");
-
-            // 任务1：获取并验证用户输入
-            Console.WriteLine("任务1：获取并验证用户输入\n");
-            double low2 = InputHelper.GetValidatedInput("请输入低数值（正数）： ", positiveOnly: true);
-            double high2 = InputHelper.GetValidatedInput($"请输入高数值（必须大于{low2}）： ", positiveOnly: false, minimumValue: low);
-            Console.WriteLine($"低数值: {low2}, 高数值: {high2}, 差值: {high2 - low2}\n");
-
-            // 任务2：循环与输入验证（占位符）
-            Console.WriteLine("任务2：循环与输入验证待实现。\n");
-
-            // 任务3：使用列表和文件I/O
-            Console.WriteLine("任务3：使用列表和文件I/O\n");
-            List<double> numbers2 = GenerateNumberList(low2, high2);
-
-            // 显示数字列表
-            Console.WriteLine("范围内的数字：");
-            foreach (var number in numbers2)
-            {
-                Console.Write(number + " ");
-            }
-            Console.WriteLine("\n");
-
-            // 设置文件路径到项目根目录
-            string projectRoot2 = FileHelper.GetProjectRootDirectory(3); // 根据项目结构调整层数
-            if (projectRoot2 == null)
-            {
-                Console.WriteLine("无法找到项目根目录。");
-                return;
-            }
-            string filePath2 = System.IO.Path.Combine(projectRoot2, "numbers.txt");
-            Console.WriteLine($"文件将被保存到: {filePath2}\n");
-
-            // 写入文件
-            try
-            {
-                FileHelper.WriteNumbersToFile(numbers2, filePath2);
-                Console.WriteLine($"数字已以逆序写入文件: {filePath2}\n");
-            }
-            catch (System.IO.IOException ex)
-            {
-                Console.WriteLine($"写入文件时发生错误: {ex.Message}");
-                return;
-            }
-
-            // 读取文件并计算总和
-            try
-            {
-                double sum = FileHelper.CalculateSumFromFile(filePath);
-                Console.WriteLine($"文件中数字的总和为: {sum}\n");
-            }
-            catch (System.IO.IOException ex)
-            {
-                Console.WriteLine($"读取文件时发生错误: {ex.Message}");
-                return;
-            }
-
-            // 打印范围内的质数
-            Console.WriteLine("范围内的质数：");
-            PrimeHelper.PrintPrimesInRange(low, high);
-
-            // 等待用户按回车键后退出
-            Console.WriteLine("\n按回车键退出。");
-            Console.ReadLine();
     }
+    static void AdditionalTask()
+    {
+        // 任务1：获取并验证用户输入
+        Console.WriteLine("Task 1: Obtain and validate user input\n");
+        double low2 = InputHelper.GetValidatedInput("Please enter a lower value (positive number)： ", positiveOnly: true);
+        double high2 = InputHelper.GetValidatedInput($"Please enter a high value (must be greater than {low2}）： ", positiveOnly: false, minimumValue: low2);
+        Console.WriteLine($"Low value: {low2}, High value: {high2}, Difference:{high2 - low2}\n");
 
-        /// <summary>
-        /// 生成从low到high的双精度浮点数列表。
-        /// </summary>
-        /// <param name="low">起始数值。</param>
-        /// <param name="high">结束数值。</param>
-        /// <returns>双精度浮点数列表。</returns>
-        static List<double> GenerateNumberList(double low, double high)
+        // 任务2：循环与输入验证（占位符）
+        Console.WriteLine("Task 2: Looping and input validation to be implemented.\n");
+
+        // 任务3：使用列表和文件I/O
+        Console.WriteLine("Task 3: Using Lists and File I/O\n");
+        List<double> numbers2 = PrimeHelper.GenerateNumberList(low2, high2);
+
+        // 显示数字列表
+        Console.WriteLine("Numbers in range:");
+        foreach (var number in numbers2)
         {
-            List<double> numbers = new List<double>();
-            for (double i = low; i <= high; i++)
-            {
-                numbers.Add(i);
-            }
-            return numbers;
+            Console.Write(number + " ");
         }
+        Console.WriteLine("\n");
+
+        // 设置文件路径到项目根目录
+        string projectRoot2 = FileHelper.GetProjectRootDirectory(3); // 根据项目结构调整层数
+        if (projectRoot2 == null)
+        {
+            Console.WriteLine("Unable to find project root directory.");
+            return;
+        }
+        string filePath2 = System.IO.Path.Combine(projectRoot2, "additional_task_numbers.txt");
+        Console.WriteLine($"The file will be saved to:{filePath2}\n");
+
+        // 写入文件
+        try
+        {
+            FileHelper.WriteNumbersToFile(numbers2, filePath2);
+            Console.WriteLine($"The numbers are written to the file in reverse order: {filePath2}\n");
+        }
+        catch (System.IO.IOException ex)
+        {
+            Console.WriteLine($"An error occurred while writing the file:{ex.Message}");
+            return;
+        }
+
+        // 读取文件并计算总和
+        try
+        {
+            double sum = FileHelper.CalculateSumFromFile(filePath2);
+            Console.WriteLine($"The sum of the numbers in the file is:{sum}\n");
+        }
+        catch (System.IO.IOException ex)
+        {
+            Console.WriteLine($"An error occurred while reading the file:{ex.Message}");
+            return;
+        }
+
+        // 打印范围内的质数
+        Console.WriteLine("Prime numbers in the range：");
+        PrimeHelper.PrintPrimesInRange(low2, high2);
+
+        // 等待用户按回车键后退出
+        Console.WriteLine("\nPress Enter to exit.");
+        Console.ReadLine();
+    }
 
     /// <summary>
     /// 向上遍历指定层数以获取项目根目录。
@@ -182,17 +166,17 @@ class Program
             string input = Console.ReadLine();
             if (!int.TryParse(input, out int result))
             {
-                Console.WriteLine("输入的不是有效的整数。请重试。");
+                Console.WriteLine("The value entered is not a valid integer. Please try again.");
                 continue;
             }
             if (positiveOnly && result <= 0)
             {
-                Console.WriteLine("数值必须为正整数。请重试。");
+                Console.WriteLine("The value must be a positive integer. Please try again.");
                 continue;
             }
             if (result <= minimumValue)
             {
-                Console.WriteLine($"数值必须大于{minimumValue}。请重试。");
+                Console.WriteLine($"The value must be greater than{minimumValue}。Please try again.");
                 continue;
             }
             return result;
@@ -239,7 +223,7 @@ class Program
         }
         if (!found)
         {
-            Console.WriteLine("在指定范围内未找到素数。");
+            Console.WriteLine("No prime numbers were found in the specified range.");
         }
     }
 
