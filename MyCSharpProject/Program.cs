@@ -10,108 +10,110 @@ class Program
 {
     static void Main(string[] args)
     {
-        // // Task 1: Create variables
-        // Console.WriteLine("任务1：创建变量\n");
-        // int low = GetValidatedInput("请输入低数值（正整数）： ", positiveOnly: true);
-        // int high = GetValidatedInput($"请输入高数值（必须大于{low}）： ", positiveOnly: false, minimumValue: low);
-        // Console.WriteLine($"低数值: {low}, 高数值: {high}, 差值: {high - low}\n");
-
-        // // Task 2: Loops and input validation (Placeholder)
-        // Console.WriteLine("任务2：循环与输入验证待实现。\n");
-
-        // // Task 3: Use arrays and file I/O
-        // Console.WriteLine("任务3：使用数组和文件I/O\n");
-        // List<int> numbers = GenerateNumberList(low, high);
-
-        // // 显示数字列表
-        // Console.WriteLine("范围内的数字：");
-        // foreach (var number in numbers)
-        // {
-        //     Console.Write(number + " ");
-        // }
-        // Console.WriteLine("\n");
-
-        // // string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-        // // string filePath = Path.Combine(documentsPath, "numbers.txt");
-        // // 获取项目根目录
-        // string projectRoot = GetProjectRootDirectory(3); // 假设需要向上3层
-        // if (projectRoot == null)
-        // {
-        //     Console.WriteLine("无法找到项目根目录。");
-        //     return;
-        // }
+        //TODO The current code belongs to Task 1-3 and can be used without comments.
         
-        // // 设置文件路径到项目根目录
-        // string filePath = Path.Combine(projectRoot, "numbers.txt");
+        // Task 1: Create variables
+        Console.WriteLine("Task 1: Create variables\n");
+        int low = GetValidatedInput("Please enter a lower value (positive integer)： ", positiveOnly: true);
+        int high = GetValidatedInput($"Please enter a high value (must be greater than{low}）： ", positiveOnly: false, minimumValue: low);
+        Console.WriteLine($"Low value: {low}, High value: {high}, diff value: {high - low}\n");
 
-        // // string filePath = Path.Combine(Environment.CurrentDirectory, "numbers.txt");
-        // try
-        // {
-        //     WriteNumbersToFile(numbers, filePath);
-        //     Console.WriteLine($"数字已以逆序写入文件: {filePath}\n");
-        // }
-        // catch (IOException ex)
-        // {
-        //     Console.WriteLine($"写入文件时发生错误: {ex.Message}");
-        //     return;
-        // }
+        // Task 2: Loops and input validation (Placeholder)
+        Console.WriteLine("Task 2: Loop and input validation to be implemented。\n");
 
-        // try
-        // {
-        //     int sum = CalculateSumFromFile(filePath);
-        //     Console.WriteLine($"文件中数字的总和为: {sum}\n");
-        // }
-        // catch (IOException ex)
-        // {
-        //     Console.WriteLine($"读取文件时发生错误: {ex.Message}");
-        //     return;
-        // }
+        // Task 3: Use arrays and file I/O
+        Console.WriteLine("Task 3: Using arrays and filesI/O\n");
+        List<int> numbers = GenerateNumberList(low, high);
 
-        // Console.WriteLine("范围内的素数：");
-        // PrintPrimesInRange(low, high);
+        // 显示数字列表
+        Console.WriteLine("Numbers in range：");
+        foreach (var number in numbers)
+        {
+            Console.Write(number + " ");
+        }
+        Console.WriteLine("\n");
 
-        // // 等待用户按回车键后退出
-        // Console.WriteLine("\n按回车键退出。");
-        // Console.ReadLine();
-      // 显示当前工作目录
+        // string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+        // string filePath = Path.Combine(documentsPath, "numbers.txt");
+        // 获取项目根目录
+        string projectRoot = GetProjectRootDirectory(3); // 假设需要向上3层
+        if (projectRoot == null)
+        {
+            Console.WriteLine("Unable to find project root directory。");
+            return;
+        }
+        
+        // Set the file path to the project root directory
+        string filePath = Path.Combine(projectRoot, "numbers.txt");
+
+        // string filePath = Path.Combine(Environment.CurrentDirectory, "numbers.txt");
+        try
+        {
+            WriteNumbersToFile(numbers, filePath);
+            Console.WriteLine($"Numbers are written to the file in reverse order: {filePath}\n");
+        }
+        catch (IOException ex)
+        {
+            Console.WriteLine($"An error occurred while writing to the file: {ex.Message}");
+            return;
+        }
+
+        try
+        {
+            int sum = CalculateSumFromFile(filePath);
+            Console.WriteLine($"The sum of the numbers in the file is: {sum}\n");
+        }
+        catch (IOException ex)
+        {
+            Console.WriteLine($"An error occurred while reading the file: {ex.Message}");
+            return;
+        }
+
+        Console.WriteLine("Prime numbers in the range：");
+        PrintPrimesInRange(low, high);
+
+        // 等待用户按回车键后退出
+        Console.WriteLine("\nPress Enter to exit.");
+        Console.ReadLine();
+        // 显示当前工作目录
             Console.WriteLine($"当前工作目录: {Environment.CurrentDirectory}\n");
 
             // 任务1：获取并验证用户输入
             Console.WriteLine("任务1：获取并验证用户输入\n");
-            double low = InputHelper.GetValidatedInput("请输入低数值（正数）： ", positiveOnly: true);
-            double high = InputHelper.GetValidatedInput($"请输入高数值（必须大于{low}）： ", positiveOnly: false, minimumValue: low);
-            Console.WriteLine($"低数值: {low}, 高数值: {high}, 差值: {high - low}\n");
+            double low2 = InputHelper.GetValidatedInput("请输入低数值（正数）： ", positiveOnly: true);
+            double high2 = InputHelper.GetValidatedInput($"请输入高数值（必须大于{low2}）： ", positiveOnly: false, minimumValue: low);
+            Console.WriteLine($"低数值: {low2}, 高数值: {high2}, 差值: {high2 - low2}\n");
 
             // 任务2：循环与输入验证（占位符）
             Console.WriteLine("任务2：循环与输入验证待实现。\n");
 
             // 任务3：使用列表和文件I/O
             Console.WriteLine("任务3：使用列表和文件I/O\n");
-            List<double> numbers = GenerateNumberList(low, high);
+            List<double> numbers2 = GenerateNumberList(low2, high2);
 
             // 显示数字列表
             Console.WriteLine("范围内的数字：");
-            foreach (var number in numbers)
+            foreach (var number in numbers2)
             {
                 Console.Write(number + " ");
             }
             Console.WriteLine("\n");
 
             // 设置文件路径到项目根目录
-            string projectRoot = FileHelper.GetProjectRootDirectory(3); // 根据项目结构调整层数
-            if (projectRoot == null)
+            string projectRoot2 = FileHelper.GetProjectRootDirectory(3); // 根据项目结构调整层数
+            if (projectRoot2 == null)
             {
                 Console.WriteLine("无法找到项目根目录。");
                 return;
             }
-            string filePath = System.IO.Path.Combine(projectRoot, "numbers.txt");
-            Console.WriteLine($"文件将被保存到: {filePath}\n");
+            string filePath2 = System.IO.Path.Combine(projectRoot2, "numbers.txt");
+            Console.WriteLine($"文件将被保存到: {filePath2}\n");
 
             // 写入文件
             try
             {
-                FileHelper.WriteNumbersToFile(numbers, filePath);
-                Console.WriteLine($"数字已以逆序写入文件: {filePath}\n");
+                FileHelper.WriteNumbersToFile(numbers2, filePath2);
+                Console.WriteLine($"数字已以逆序写入文件: {filePath2}\n");
             }
             catch (System.IO.IOException ex)
             {
