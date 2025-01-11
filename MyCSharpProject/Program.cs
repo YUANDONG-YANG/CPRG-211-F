@@ -6,11 +6,11 @@ class Program
     static void Main(string[] args)
     {
         //TODO The current code belongs to Task 1-3 and can be used without comments.
-        // Task1to3();
+        Task1To3();
         //TODO The current code belongs to Additional task!!.
         AdditionalTask();
     }
-    static void Task1to3()
+    static void Task1To3()
     {
         // Task 1: Create variables
         Console.WriteLine("Task 1: Create variables\n");
