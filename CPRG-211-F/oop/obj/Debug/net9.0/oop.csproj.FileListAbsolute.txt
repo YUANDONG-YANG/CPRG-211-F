@@ -1,0 +1,14 @@
+F:\dev-workspace\CPRG-211-F\oop\bin\Debug\net9.0\oop.exe
+F:\dev-workspace\CPRG-211-F\oop\bin\Debug\net9.0\oop.deps.json
+F:\dev-workspace\CPRG-211-F\oop\bin\Debug\net9.0\oop.runtimeconfig.json
+F:\dev-workspace\CPRG-211-F\oop\bin\Debug\net9.0\oop.dll
+F:\dev-workspace\CPRG-211-F\oop\bin\Debug\net9.0\oop.pdb
+F:\dev-workspace\CPRG-211-F\oop\obj\Debug\net9.0\oop.GeneratedMSBuildEditorConfig.editorconfig
+F:\dev-workspace\CPRG-211-F\oop\obj\Debug\net9.0\oop.AssemblyInfoInputs.cache
+F:\dev-workspace\CPRG-211-F\oop\obj\Debug\net9.0\oop.AssemblyInfo.cs
+F:\dev-workspace\CPRG-211-F\oop\obj\Debug\net9.0\oop.csproj.CoreCompileInputs.cache
+F:\dev-workspace\CPRG-211-F\oop\obj\Debug\net9.0\oop.dll
+F:\dev-workspace\CPRG-211-F\oop\obj\Debug\net9.0\refint\oop.dll
+F:\dev-workspace\CPRG-211-F\oop\obj\Debug\net9.0\oop.pdb
+F:\dev-workspace\CPRG-211-F\oop\obj\Debug\net9.0\oop.genruntimeconfig.cache
+F:\dev-workspace\CPRG-211-F\oop\obj\Debug\net9.0\ref\oop.dll
