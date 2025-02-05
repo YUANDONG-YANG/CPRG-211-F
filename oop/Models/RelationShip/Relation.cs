@@ -1,7 +1,7 @@
 using System;
-using oop.Models;
+using oop.Models.RelationShip;
 
-namespace oop.Services
+namespace oop.Models.RelationShip
 {
     /// <summary>
     /// Represents a relationship between two people.

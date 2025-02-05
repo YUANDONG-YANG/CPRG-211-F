@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\dev-workspace\\CPRG-211-F\\oop\\oop.csproj": {}
+    "F:\\dev-workspace\\git-hub\\oop\\oop.csproj": {}
   },
   "projects": {
-    "F:\\dev-workspace\\CPRG-211-F\\oop\\oop.csproj": {
+    "F:\\dev-workspace\\git-hub\\oop\\oop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\dev-workspace\\CPRG-211-F\\oop\\oop.csproj",
+        "projectUniqueName": "F:\\dev-workspace\\git-hub\\oop\\oop.csproj",
         "projectName": "oop",
-        "projectPath": "F:\\dev-workspace\\CPRG-211-F\\oop\\oop.csproj",
+        "projectPath": "F:\\dev-workspace\\git-hub\\oop\\oop.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "F:\\dev-workspace\\CPRG-211-F\\oop\\obj\\",
+        "outputPath": "F:\\dev-workspace\\git-hub\\oop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"

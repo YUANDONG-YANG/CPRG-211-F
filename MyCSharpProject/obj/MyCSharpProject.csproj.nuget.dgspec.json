@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\demo-repo\\CPRG-211-F\\MyCSharpProject\\MyCSharpProject.csproj": {}
+    "F:\\dev-workspace\\git-hub\\MyCSharpProject\\MyCSharpProject.csproj": {}
   },
   "projects": {
-    "D:\\demo-repo\\CPRG-211-F\\MyCSharpProject\\MyCSharpProject.csproj": {
+    "F:\\dev-workspace\\git-hub\\MyCSharpProject\\MyCSharpProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\demo-repo\\CPRG-211-F\\MyCSharpProject\\MyCSharpProject.csproj",
+        "projectUniqueName": "F:\\dev-workspace\\git-hub\\MyCSharpProject\\MyCSharpProject.csproj",
         "projectName": "MyCSharpProject",
-        "projectPath": "D:\\demo-repo\\CPRG-211-F\\MyCSharpProject\\MyCSharpProject.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\demo-repo\\CPRG-211-F\\MyCSharpProject\\obj\\",
+        "projectPath": "F:\\dev-workspace\\git-hub\\MyCSharpProject\\MyCSharpProject.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "F:\\dev-workspace\\git-hub\\MyCSharpProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
