@@ -11,7 +11,7 @@ namespace oop
         static void Main(string[] args)
         {
             // Lab 1: Creating Classes
-             CreatingClasses.Run();
+            // CreatingClasses.Run();
             // Lab 2: Inheritance
             Inheritance.Run();
         }

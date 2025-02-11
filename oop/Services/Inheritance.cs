@@ -57,9 +57,5 @@ namespace oop.Services
             Console.ReadLine();
         }
 
-        private static List<Employee> LoadEmployeesFromFile(string filePath)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

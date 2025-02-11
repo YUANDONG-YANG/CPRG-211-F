@@ -5,24 +5,22 @@ namespace oop.Models
 {
     public class Salaried : Employee
     {
-        // Here, Salary can be understood as "weekly salary" or "annual salary / 52"; it depends on your actual needs.
+        // Here, Salary can be understood as the "weekly salary" or "annual salary / 52" depending on your needs.
         public double Salary { get; set; }
 
-        public Salaried(string id, string name, long sin, double salary)
-            : base(id, name, sin)
+        // The constructor now accepts a DateTime parameter for the employee's birthday.
+        public Salaried(string id, string name, string address, string cellPhone, long sin, DateTime birthday, string postion, double salary)
+            : base(id, name, address, cellPhone, sin, birthday, postion)
         {
             Salary = salary;
         }
 
-        // Salaried employees receive a fixed salary every week
-        public override double CalculateWeeklyPay()
-        {
-            return Salary;
-        }
+        // Salaried employees receive a fixed salary every week.
+        public override double CalculateWeeklyPay() => Salary;
 
         public override string ToString()
         {
-            return base.ToString() + $", Weekly Salary={Salary}";
+            return base.ToString() + $", Weekly Salary={Salary:F2}";
         }
     }
 }
