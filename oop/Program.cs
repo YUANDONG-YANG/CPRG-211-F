@@ -15,7 +15,7 @@ namespace oop
             // Lab 2: Inheritance
             // Inheritance.Run();
             // Lab 3: Interfaces and Abstract Classes
-            // AnimalAbstract.Run();dd
+            AnimalAbstract.Run();
             AnimalInterface.Run();
         }
     }
