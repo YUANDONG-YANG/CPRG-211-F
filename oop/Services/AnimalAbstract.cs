@@ -5,6 +5,8 @@ namespace oop.Services
     {
         public static void Run()
         {
+            Console.WriteLine($"Lab 3:Abstract Classes");
+            //Lab 3: Interfaces and Abstract Classes
             // Ask for dog details
             Console.Write("Enter the dog's name: ");
             string dogName = Console.ReadLine();
