@@ -11,7 +11,7 @@ namespace oop.Models
 
         public string Cry()
         {
-            throw new NotImplementedException();
+             return "Woof!";
         }
 
         public void Eat()
