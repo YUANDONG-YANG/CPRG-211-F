@@ -1,5 +1,6 @@
-using System;
-using oop.Models.Abstract;
+
+using oop.Models.Interface;
+
 namespace oop.Models
 {
     class Cat2 : IAnimal
