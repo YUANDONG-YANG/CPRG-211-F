@@ -53,6 +53,8 @@ namespace oop.Utilities
                     long sin = long.Parse(parts[4].Trim());
                     string position = parts[6].Trim();
                     // Parse the Birthday from field 6 (index 5).
+                    //alert:People before Christ could not have kept their goods until now,
+                    //and there is no February 29th
                     DateTime birthday;
                     if (!DateTime.TryParse(parts[5].Trim(), out birthday))
                     {

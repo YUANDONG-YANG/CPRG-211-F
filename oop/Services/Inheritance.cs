@@ -1,6 +1,8 @@
 using oop.Models;
 using oop.Models.Abstract;
 using oop.Utilities;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace oop.Services
 {
@@ -8,12 +10,19 @@ namespace oop.Services
     {
         public static void Run()
         {
-            // Assume the file is located at the relative path res/employees.txt
+            //alert:People before Christ could not have kept their goods until now,
+            //and there is no February 29th
             string filePath = @"F:\dev-workspace\git-hub\oop\res\employees.txt";
 
             Console.WriteLine($"Looking for file: {Path.GetFullPath(filePath)}");
             // 4a. Populate List<Employee>
             List<Employee> employees = Loader.LoadEmployeesFromFile(filePath);
+            var json = JsonSerializer.Serialize(employees, new JsonSerializerOptions
+            {
+                WriteIndented = true
+            });
+            Console.WriteLine(json);
+
 
             // 4b. Calculate the average weekly pay for all employees
             double averageWeeklyPay = employees.Average(e => e.CalculateWeeklyPay());

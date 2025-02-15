@@ -13,16 +13,20 @@ namespace oop.Models.Abstract
         public string CellPhone { get; set; } = cellPhone;
         public long SIN { get; set; } = sin;
         public DateTime Birthday { get; set; } = birthday;
-        
+
         public string Postion { get; set; } = postion;
-        
+
         // Each derived class must implement its own logic for calculating the weekly pay.
         public abstract double CalculateWeeklyPay();
 
         // Override ToString() to provide a common string representation of an Employee.
         public override string ToString()
         {
-            return $"[{GetType().Name}] ID={ID}, Name={Name}, SIN={SIN}, Birthday={Birthday:yyyy-MM-dd}";
+            return $"[{GetType().Name}] " +
+                   $"ID={ID}, Name={Name}, Position={Postion}, " +
+                   $"Address={Address}, CellPhone={CellPhone}, " +
+                   $"SIN={SIN}, Birthday={Birthday:yyyy-MM-dd}";
         }
+
     }
 }

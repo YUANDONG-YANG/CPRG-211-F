@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\dev-workspace\\git-hub\\oop\\oop.csproj": {}
+    "f:\\dev-workspace\\git-hub\\oop\\oop.csproj": {}
   },
   "projects": {
-    "F:\\dev-workspace\\git-hub\\oop\\oop.csproj": {
+    "f:\\dev-workspace\\git-hub\\oop\\oop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\dev-workspace\\git-hub\\oop\\oop.csproj",
+        "projectUniqueName": "f:\\dev-workspace\\git-hub\\oop\\oop.csproj",
         "projectName": "oop",
-        "projectPath": "F:\\dev-workspace\\git-hub\\oop\\oop.csproj",
+        "projectPath": "f:\\dev-workspace\\git-hub\\oop\\oop.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "F:\\dev-workspace\\git-hub\\oop\\obj\\",
+        "outputPath": "f:\\dev-workspace\\git-hub\\oop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"

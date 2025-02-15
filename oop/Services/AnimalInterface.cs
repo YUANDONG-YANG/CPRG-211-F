@@ -6,7 +6,7 @@ public class AnimalInterface
     public static void Run()
     {
         Console.WriteLine($"Lab 3: Interfaces");
-        List<IAnimal> animals = new List<IAnimal>();
+        List<IAnimal> animals = [];
 
         // Create and populate a Dog object
         Console.Write("Enter Dog2's Name: ");
