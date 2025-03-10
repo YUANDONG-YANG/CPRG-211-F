@@ -1,0 +1,3484 @@
+{
+  "Version": 1,
+  "Hash": "s/xSlWYduHgVYroj09HdOERbXAxAh5t2Flp99sEADeA=",
+  "Source": "MauiBlazorApp",
+  "BasePath": "/",
+  "Mode": "Root",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MauiBlazorApp\\wwwroot",
+      "Source": "MauiBlazorApp",
+      "ContentRoot": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\",
+      "BasePath": "/",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\7hi522d15j-mvhjplyii6.gz",
+      "SourceId": "MauiBlazorApp",
+      "SourceType": "Computed",
+      "ContentRoot": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "MauiBlazorApp#[.{fingerprint=mvhjplyii6}]!.bundle.scp.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\MauiBlazorApp.bundle.scp.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "ohluqa92c2",
+      "Integrity": "TJpSpjUgtD8EDViUMnm6IWnfrGNjbZgGtsvN+qplX4E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\MauiBlazorApp.bundle.scp.css"
+    },
+    {
+      "Identity": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\8w1369j38s-8inm30yfxf.gz",
+      "SourceId": "MauiBlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "css/bootstrap/bootstrap.min.css#[.{fingerprint=8inm30yfxf}]?.map.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "m532s4naxw",
+      "Integrity": "epiz+IkftKdCVrNwM3M3b4/Co3mxoqDpjOfMrHfv/7E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\7hi522d15j-mvhjplyii6.br",
+      "SourceId": "MauiBlazorApp",
+      "SourceType": "Computed",
+      "ContentRoot": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\",
+      "BasePath": "/",
+      "RelativePath": "MauiBlazorApp#[.{fingerprint=mvhjplyii6}]!.bundle.scp.css.br",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\MauiBlazorApp.bundle.scp.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "br",
+      "Fingerprint": "7ix2nb0t11",
+      "Integrity": "4SYpC/7FCKW05t9CLACJ/bKrQUY9TMNgMCtdiW2JrMs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\MauiBlazorApp.bundle.scp.css"
+    },
+    {
+      "Identity": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\8w1369j38s-8inm30yfxf.br",
+      "SourceId": "MauiBlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\",
+      "BasePath": "/",
+      "RelativePath": "css/bootstrap/bootstrap.min.css#[.{fingerprint=8inm30yfxf}]?.map.br",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "br",
+      "Fingerprint": "b4a1wrn6r6",
+      "Integrity": "e0W3cltN7F1+gW+ilWd1J4N1PyvYvfyn8Js6/fJEqb0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\qyisccf8zw-dfs81rdd56.br",
+      "SourceId": "MauiBlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\",
+      "BasePath": "/",
+      "RelativePath": "index#[.{fingerprint=dfs81rdd56}]?.html.br",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\index.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "br",
+      "Fingerprint": "0cdtlivdio",
+      "Integrity": "QCqjEZA1vM2OgNbCmA4cqXlTfpFfbhsNAOa4k4YMR3o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\index.html"
+    },
+    {
+      "Identity": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\vb09ii11pm-e5tk7yf482.br",
+      "SourceId": "MauiBlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\",
+      "BasePath": "/",
+      "RelativePath": "css/app#[.{fingerprint=e5tk7yf482}]?.css.br",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\css\\app.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "br",
+      "Fingerprint": "ix9166x7gh",
+      "Integrity": "eqlsvw/N8zKnAKc05YDjHT7YIDSUfr5wmQ20CD/lmXo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\css\\app.css"
+    },
+    {
+      "Identity": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\y4t99gocvm-mvhjplyii6.br",
+      "SourceId": "MauiBlazorApp",
+      "SourceType": "Computed",
+      "ContentRoot": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\",
+      "BasePath": "/",
+      "RelativePath": "MauiBlazorApp#[.{fingerprint=mvhjplyii6}]?.styles.css.br",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\MauiBlazorApp.styles.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "br",
+      "Fingerprint": "7ix2nb0t11",
+      "Integrity": "4SYpC/7FCKW05t9CLACJ/bKrQUY9TMNgMCtdiW2JrMs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\MauiBlazorApp.styles.css"
+    },
+    {
+      "Identity": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\z83cm6ib44-6gzpyzhau4.br",
+      "SourceId": "MauiBlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\",
+      "BasePath": "/",
+      "RelativePath": "css/bootstrap/bootstrap.min#[.{fingerprint=6gzpyzhau4}]?.css.br",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "br",
+      "Fingerprint": "2o883p7o84",
+      "Integrity": "4jR0OWxmfzUr920AK8Yzn3GjSgWqtt7AtQDXrJ9OWmA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Identity": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\qyisccf8zw-dfs81rdd56.gz",
+      "SourceId": "MauiBlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "index#[.{fingerprint=dfs81rdd56}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\index.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "27c0pek5qz",
+      "Integrity": "QpEfVQHppyCLNooQaoRt3mb1E+m8c8lEeeeD+5Zk7zs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\index.html"
+    },
+    {
+      "Identity": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\vb09ii11pm-e5tk7yf482.gz",
+      "SourceId": "MauiBlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "css/app#[.{fingerprint=e5tk7yf482}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\css\\app.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "qfor6zdeny",
+      "Integrity": "ismDfJHkNHfoqxdRjvM7D0cvQOeIn31cbNUC6dB4m9A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\css\\app.css"
+    },
+    {
+      "Identity": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\y4t99gocvm-mvhjplyii6.gz",
+      "SourceId": "MauiBlazorApp",
+      "SourceType": "Computed",
+      "ContentRoot": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "MauiBlazorApp#[.{fingerprint=mvhjplyii6}]?.styles.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\MauiBlazorApp.styles.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "ohluqa92c2",
+      "Integrity": "TJpSpjUgtD8EDViUMnm6IWnfrGNjbZgGtsvN+qplX4E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\MauiBlazorApp.styles.css"
+    },
+    {
+      "Identity": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\z83cm6ib44-6gzpyzhau4.gz",
+      "SourceId": "MauiBlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "css/bootstrap/bootstrap.min#[.{fingerprint=6gzpyzhau4}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "7l51xal3e9",
+      "Integrity": "dfRdV3FWJNHUyN/ZTK8eRHslFtdOjQxpi1BEcWXtMR8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Identity": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\MauiBlazorApp.styles.css",
+      "SourceId": "MauiBlazorApp",
+      "SourceType": "Computed",
+      "ContentRoot": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\",
+      "BasePath": "/",
+      "RelativePath": "MauiBlazorApp#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "mvhjplyii6",
+      "Integrity": "vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\MauiBlazorApp.styles.css"
+    },
+    {
+      "Identity": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\MauiBlazorApp.bundle.scp.css",
+      "SourceId": "MauiBlazorApp",
+      "SourceType": "Computed",
+      "ContentRoot": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\",
+      "BasePath": "/",
+      "RelativePath": "MauiBlazorApp#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "mvhjplyii6",
+      "Integrity": "vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\MauiBlazorApp.bundle.scp.css"
+    },
+    {
+      "Identity": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\css\\app.css",
+      "SourceId": "MauiBlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "e5tk7yf482",
+      "Integrity": "bhCZyC/yM2+DaFXr8z25+5MeWfXWqMJNNA4ZLAXbjjU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\app.css"
+    },
+    {
+      "Identity": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "SourceId": "MauiBlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/bootstrap/bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6gzpyzhau4",
+      "Integrity": "SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Identity": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "SourceId": "MauiBlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8inm30yfxf",
+      "Integrity": "gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\index.html",
+      "SourceId": "MauiBlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dfs81rdd56",
+      "Integrity": "F8FGdQGF3WThz7QoqCWbgIsaACuh3Xz8wa7HXmZkESA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/app.css",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\vb09ii11pm-e5tk7yf482.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.000648508431"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1541"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eqlsvw/N8zKnAKc05YDjHT7YIDSUfr5wmQ20CD/lmXo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"bhCZyC/yM2+DaFXr8z25+5MeWfXWqMJNNA4ZLAXbjjU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bhCZyC/yM2+DaFXr8z25+5MeWfXWqMJNNA4ZLAXbjjU="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.css",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\vb09ii11pm-e5tk7yf482.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000556173526"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1797"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ismDfJHkNHfoqxdRjvM7D0cvQOeIn31cbNUC6dB4m9A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"bhCZyC/yM2+DaFXr8z25+5MeWfXWqMJNNA4ZLAXbjjU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bhCZyC/yM2+DaFXr8z25+5MeWfXWqMJNNA4ZLAXbjjU="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.css",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\css\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3376"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bhCZyC/yM2+DaFXr8z25+5MeWfXWqMJNNA4ZLAXbjjU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bhCZyC/yM2+DaFXr8z25+5MeWfXWqMJNNA4ZLAXbjjU="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.css.br",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\vb09ii11pm-e5tk7yf482.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1541"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eqlsvw/N8zKnAKc05YDjHT7YIDSUfr5wmQ20CD/lmXo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eqlsvw/N8zKnAKc05YDjHT7YIDSUfr5wmQ20CD/lmXo="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.css.gz",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\vb09ii11pm-e5tk7yf482.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ismDfJHkNHfoqxdRjvM7D0cvQOeIn31cbNUC6dB4m9A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ismDfJHkNHfoqxdRjvM7D0cvQOeIn31cbNUC6dB4m9A="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.e5tk7yf482.css",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\vb09ii11pm-e5tk7yf482.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.000648508431"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1541"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eqlsvw/N8zKnAKc05YDjHT7YIDSUfr5wmQ20CD/lmXo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"bhCZyC/yM2+DaFXr8z25+5MeWfXWqMJNNA4ZLAXbjjU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e5tk7yf482"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bhCZyC/yM2+DaFXr8z25+5MeWfXWqMJNNA4ZLAXbjjU="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.e5tk7yf482.css",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\vb09ii11pm-e5tk7yf482.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000556173526"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1797"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ismDfJHkNHfoqxdRjvM7D0cvQOeIn31cbNUC6dB4m9A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"bhCZyC/yM2+DaFXr8z25+5MeWfXWqMJNNA4ZLAXbjjU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e5tk7yf482"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bhCZyC/yM2+DaFXr8z25+5MeWfXWqMJNNA4ZLAXbjjU="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.e5tk7yf482.css",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\css\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3376"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bhCZyC/yM2+DaFXr8z25+5MeWfXWqMJNNA4ZLAXbjjU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e5tk7yf482"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bhCZyC/yM2+DaFXr8z25+5MeWfXWqMJNNA4ZLAXbjjU="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.e5tk7yf482.css.br",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\vb09ii11pm-e5tk7yf482.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1541"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eqlsvw/N8zKnAKc05YDjHT7YIDSUfr5wmQ20CD/lmXo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e5tk7yf482"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css.br"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eqlsvw/N8zKnAKc05YDjHT7YIDSUfr5wmQ20CD/lmXo="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.e5tk7yf482.css.gz",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\vb09ii11pm-e5tk7yf482.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ismDfJHkNHfoqxdRjvM7D0cvQOeIn31cbNUC6dB4m9A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e5tk7yf482"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ismDfJHkNHfoqxdRjvM7D0cvQOeIn31cbNUC6dB4m9A="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.6gzpyzhau4.css",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\z83cm6ib44-6gzpyzhau4.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.000057250816"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17466"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4jR0OWxmfzUr920AK8Yzn3GjSgWqtt7AtQDXrJ9OWmA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6gzpyzhau4"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.6gzpyzhau4.css",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\z83cm6ib44-6gzpyzhau4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000041912905"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23858"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dfRdV3FWJNHUyN/ZTK8eRHslFtdOjQxpi1BEcWXtMR8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6gzpyzhau4"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.6gzpyzhau4.css",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162726"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6gzpyzhau4"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.6gzpyzhau4.css.br",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\z83cm6ib44-6gzpyzhau4.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17466"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4jR0OWxmfzUr920AK8Yzn3GjSgWqtt7AtQDXrJ9OWmA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6gzpyzhau4"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css.br"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4jR0OWxmfzUr920AK8Yzn3GjSgWqtt7AtQDXrJ9OWmA="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.6gzpyzhau4.css.gz",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\z83cm6ib44-6gzpyzhau4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23858"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dfRdV3FWJNHUyN/ZTK8eRHslFtdOjQxpi1BEcWXtMR8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6gzpyzhau4"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dfRdV3FWJNHUyN/ZTK8eRHslFtdOjQxpi1BEcWXtMR8="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\z83cm6ib44-6gzpyzhau4.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.000057250816"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17466"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4jR0OWxmfzUr920AK8Yzn3GjSgWqtt7AtQDXrJ9OWmA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\z83cm6ib44-6gzpyzhau4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000041912905"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23858"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dfRdV3FWJNHUyN/ZTK8eRHslFtdOjQxpi1BEcWXtMR8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162726"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\8w1369j38s-8inm30yfxf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000013397104"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "74642"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"epiz+IkftKdCVrNwM3M3b4/Co3mxoqDpjOfMrHfv/7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\8w1369j38s-8inm30yfxf.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.000017661604"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56619"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e0W3cltN7F1+gW+ilWd1J4N1PyvYvfyn8Js6/fJEqb0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map.br",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\8w1369j38s-8inm30yfxf.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56619"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e0W3cltN7F1+gW+ilWd1J4N1PyvYvfyn8Js6/fJEqb0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css.map.br"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-e0W3cltN7F1+gW+ilWd1J4N1PyvYvfyn8Js6/fJEqb0="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map.gz",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\8w1369j38s-8inm30yfxf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "74642"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"epiz+IkftKdCVrNwM3M3b4/Co3mxoqDpjOfMrHfv/7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css.map.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-epiz+IkftKdCVrNwM3M3b4/Co3mxoqDpjOfMrHfv/7E="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.br",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\z83cm6ib44-6gzpyzhau4.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17466"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4jR0OWxmfzUr920AK8Yzn3GjSgWqtt7AtQDXrJ9OWmA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4jR0OWxmfzUr920AK8Yzn3GjSgWqtt7AtQDXrJ9OWmA="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.gz",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\z83cm6ib44-6gzpyzhau4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23858"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dfRdV3FWJNHUyN/ZTK8eRHslFtdOjQxpi1BEcWXtMR8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dfRdV3FWJNHUyN/ZTK8eRHslFtdOjQxpi1BEcWXtMR8="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.map",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\8w1369j38s-8inm30yfxf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000013397104"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "74642"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"epiz+IkftKdCVrNwM3M3b4/Co3mxoqDpjOfMrHfv/7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.map",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\8w1369j38s-8inm30yfxf.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.000017661604"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56619"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e0W3cltN7F1+gW+ilWd1J4N1PyvYvfyn8Js6/fJEqb0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.map",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.map.br",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\8w1369j38s-8inm30yfxf.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56619"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e0W3cltN7F1+gW+ilWd1J4N1PyvYvfyn8Js6/fJEqb0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-e0W3cltN7F1+gW+ilWd1J4N1PyvYvfyn8Js6/fJEqb0="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.map.gz",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\8w1369j38s-8inm30yfxf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "74642"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"epiz+IkftKdCVrNwM3M3b4/Co3mxoqDpjOfMrHfv/7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-epiz+IkftKdCVrNwM3M3b4/Co3mxoqDpjOfMrHfv/7E="
+        }
+      ]
+    },
+    {
+      "Route": "index.dfs81rdd56.html",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\qyisccf8zw-dfs81rdd56.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.003225806452"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "309"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QCqjEZA1vM2OgNbCmA4cqXlTfpFfbhsNAOa4k4YMR3o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"F8FGdQGF3WThz7QoqCWbgIsaACuh3Xz8wa7HXmZkESA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dfs81rdd56"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F8FGdQGF3WThz7QoqCWbgIsaACuh3Xz8wa7HXmZkESA="
+        }
+      ]
+    },
+    {
+      "Route": "index.dfs81rdd56.html",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\qyisccf8zw-dfs81rdd56.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002262443439"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "441"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QpEfVQHppyCLNooQaoRt3mb1E+m8c8lEeeeD+5Zk7zs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"F8FGdQGF3WThz7QoqCWbgIsaACuh3Xz8wa7HXmZkESA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dfs81rdd56"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F8FGdQGF3WThz7QoqCWbgIsaACuh3Xz8wa7HXmZkESA="
+        }
+      ]
+    },
+    {
+      "Route": "index.dfs81rdd56.html",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "859"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F8FGdQGF3WThz7QoqCWbgIsaACuh3Xz8wa7HXmZkESA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dfs81rdd56"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F8FGdQGF3WThz7QoqCWbgIsaACuh3Xz8wa7HXmZkESA="
+        }
+      ]
+    },
+    {
+      "Route": "index.dfs81rdd56.html.br",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\qyisccf8zw-dfs81rdd56.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "309"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QCqjEZA1vM2OgNbCmA4cqXlTfpFfbhsNAOa4k4YMR3o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dfs81rdd56"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html.br"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QCqjEZA1vM2OgNbCmA4cqXlTfpFfbhsNAOa4k4YMR3o="
+        }
+      ]
+    },
+    {
+      "Route": "index.dfs81rdd56.html.gz",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\qyisccf8zw-dfs81rdd56.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "441"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QpEfVQHppyCLNooQaoRt3mb1E+m8c8lEeeeD+5Zk7zs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dfs81rdd56"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QpEfVQHppyCLNooQaoRt3mb1E+m8c8lEeeeD+5Zk7zs="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\qyisccf8zw-dfs81rdd56.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.003225806452"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "309"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QCqjEZA1vM2OgNbCmA4cqXlTfpFfbhsNAOa4k4YMR3o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"F8FGdQGF3WThz7QoqCWbgIsaACuh3Xz8wa7HXmZkESA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-F8FGdQGF3WThz7QoqCWbgIsaACuh3Xz8wa7HXmZkESA="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\qyisccf8zw-dfs81rdd56.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002262443439"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "441"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QpEfVQHppyCLNooQaoRt3mb1E+m8c8lEeeeD+5Zk7zs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"F8FGdQGF3WThz7QoqCWbgIsaACuh3Xz8wa7HXmZkESA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-F8FGdQGF3WThz7QoqCWbgIsaACuh3Xz8wa7HXmZkESA="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "859"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F8FGdQGF3WThz7QoqCWbgIsaACuh3Xz8wa7HXmZkESA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-F8FGdQGF3WThz7QoqCWbgIsaACuh3Xz8wa7HXmZkESA="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.br",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\qyisccf8zw-dfs81rdd56.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "309"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QCqjEZA1vM2OgNbCmA4cqXlTfpFfbhsNAOa4k4YMR3o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QCqjEZA1vM2OgNbCmA4cqXlTfpFfbhsNAOa4k4YMR3o="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\qyisccf8zw-dfs81rdd56.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "441"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QpEfVQHppyCLNooQaoRt3mb1E+m8c8lEeeeD+5Zk7zs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QpEfVQHppyCLNooQaoRt3mb1E+m8c8lEeeeD+5Zk7zs="
+        }
+      ]
+    },
+    {
+      "Route": "MauiBlazorApp.bundle.scp.css",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\7hi522d15j-mvhjplyii6.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000613873542"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1628"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TJpSpjUgtD8EDViUMnm6IWnfrGNjbZgGtsvN+qplX4E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w="
+        }
+      ]
+    },
+    {
+      "Route": "MauiBlazorApp.bundle.scp.css",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\7hi522d15j-mvhjplyii6.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.000741289844"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1348"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4SYpC/7FCKW05t9CLACJ/bKrQUY9TMNgMCtdiW2JrMs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w="
+        }
+      ]
+    },
+    {
+      "Route": "MauiBlazorApp.bundle.scp.css",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\MauiBlazorApp.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w="
+        }
+      ]
+    },
+    {
+      "Route": "MauiBlazorApp.bundle.scp.css.br",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\7hi522d15j-mvhjplyii6.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1348"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4SYpC/7FCKW05t9CLACJ/bKrQUY9TMNgMCtdiW2JrMs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4SYpC/7FCKW05t9CLACJ/bKrQUY9TMNgMCtdiW2JrMs="
+        }
+      ]
+    },
+    {
+      "Route": "MauiBlazorApp.bundle.scp.css.gz",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\7hi522d15j-mvhjplyii6.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1628"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TJpSpjUgtD8EDViUMnm6IWnfrGNjbZgGtsvN+qplX4E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TJpSpjUgtD8EDViUMnm6IWnfrGNjbZgGtsvN+qplX4E="
+        }
+      ]
+    },
+    {
+      "Route": "MauiBlazorApp.mvhjplyii6.bundle.scp.css",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\7hi522d15j-mvhjplyii6.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000613873542"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1628"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TJpSpjUgtD8EDViUMnm6IWnfrGNjbZgGtsvN+qplX4E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mvhjplyii6"
+        },
+        {
+          "Name": "label",
+          "Value": "MauiBlazorApp.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w="
+        }
+      ]
+    },
+    {
+      "Route": "MauiBlazorApp.mvhjplyii6.bundle.scp.css",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\7hi522d15j-mvhjplyii6.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.000741289844"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1348"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4SYpC/7FCKW05t9CLACJ/bKrQUY9TMNgMCtdiW2JrMs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mvhjplyii6"
+        },
+        {
+          "Name": "label",
+          "Value": "MauiBlazorApp.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w="
+        }
+      ]
+    },
+    {
+      "Route": "MauiBlazorApp.mvhjplyii6.bundle.scp.css",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\MauiBlazorApp.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mvhjplyii6"
+        },
+        {
+          "Name": "label",
+          "Value": "MauiBlazorApp.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w="
+        }
+      ]
+    },
+    {
+      "Route": "MauiBlazorApp.mvhjplyii6.bundle.scp.css.br",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\7hi522d15j-mvhjplyii6.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1348"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4SYpC/7FCKW05t9CLACJ/bKrQUY9TMNgMCtdiW2JrMs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mvhjplyii6"
+        },
+        {
+          "Name": "label",
+          "Value": "MauiBlazorApp.bundle.scp.css.br"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4SYpC/7FCKW05t9CLACJ/bKrQUY9TMNgMCtdiW2JrMs="
+        }
+      ]
+    },
+    {
+      "Route": "MauiBlazorApp.mvhjplyii6.bundle.scp.css.gz",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\7hi522d15j-mvhjplyii6.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1628"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TJpSpjUgtD8EDViUMnm6IWnfrGNjbZgGtsvN+qplX4E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mvhjplyii6"
+        },
+        {
+          "Name": "label",
+          "Value": "MauiBlazorApp.bundle.scp.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TJpSpjUgtD8EDViUMnm6IWnfrGNjbZgGtsvN+qplX4E="
+        }
+      ]
+    },
+    {
+      "Route": "MauiBlazorApp.mvhjplyii6.styles.css",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\y4t99gocvm-mvhjplyii6.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.000741289844"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1348"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4SYpC/7FCKW05t9CLACJ/bKrQUY9TMNgMCtdiW2JrMs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mvhjplyii6"
+        },
+        {
+          "Name": "label",
+          "Value": "MauiBlazorApp.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w="
+        }
+      ]
+    },
+    {
+      "Route": "MauiBlazorApp.mvhjplyii6.styles.css",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\y4t99gocvm-mvhjplyii6.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000613873542"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1628"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TJpSpjUgtD8EDViUMnm6IWnfrGNjbZgGtsvN+qplX4E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mvhjplyii6"
+        },
+        {
+          "Name": "label",
+          "Value": "MauiBlazorApp.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w="
+        }
+      ]
+    },
+    {
+      "Route": "MauiBlazorApp.mvhjplyii6.styles.css",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\MauiBlazorApp.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mvhjplyii6"
+        },
+        {
+          "Name": "label",
+          "Value": "MauiBlazorApp.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w="
+        }
+      ]
+    },
+    {
+      "Route": "MauiBlazorApp.mvhjplyii6.styles.css.br",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\y4t99gocvm-mvhjplyii6.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1348"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4SYpC/7FCKW05t9CLACJ/bKrQUY9TMNgMCtdiW2JrMs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mvhjplyii6"
+        },
+        {
+          "Name": "label",
+          "Value": "MauiBlazorApp.styles.css.br"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4SYpC/7FCKW05t9CLACJ/bKrQUY9TMNgMCtdiW2JrMs="
+        }
+      ]
+    },
+    {
+      "Route": "MauiBlazorApp.mvhjplyii6.styles.css.gz",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\y4t99gocvm-mvhjplyii6.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1628"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TJpSpjUgtD8EDViUMnm6IWnfrGNjbZgGtsvN+qplX4E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mvhjplyii6"
+        },
+        {
+          "Name": "label",
+          "Value": "MauiBlazorApp.styles.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TJpSpjUgtD8EDViUMnm6IWnfrGNjbZgGtsvN+qplX4E="
+        }
+      ]
+    },
+    {
+      "Route": "MauiBlazorApp.styles.css",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\y4t99gocvm-mvhjplyii6.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.000741289844"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1348"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4SYpC/7FCKW05t9CLACJ/bKrQUY9TMNgMCtdiW2JrMs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w="
+        }
+      ]
+    },
+    {
+      "Route": "MauiBlazorApp.styles.css",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\y4t99gocvm-mvhjplyii6.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000613873542"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1628"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TJpSpjUgtD8EDViUMnm6IWnfrGNjbZgGtsvN+qplX4E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w="
+        }
+      ]
+    },
+    {
+      "Route": "MauiBlazorApp.styles.css",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\MauiBlazorApp.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vlHHAuz7xwmur0j3tnHss+IH3Sjq+g971ZLRMqgPx/w="
+        }
+      ]
+    },
+    {
+      "Route": "MauiBlazorApp.styles.css.br",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\publish\\y4t99gocvm-mvhjplyii6.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1348"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4SYpC/7FCKW05t9CLACJ/bKrQUY9TMNgMCtdiW2JrMs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4SYpC/7FCKW05t9CLACJ/bKrQUY9TMNgMCtdiW2JrMs="
+        }
+      ]
+    },
+    {
+      "Route": "MauiBlazorApp.styles.css.gz",
+      "AssetFile": "F:\\25winter\\OOP-CPRG211F\\Lab 4 Event-Driven Desktop Applications\\MauiBlazorApp\\MauiBlazorApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\y4t99gocvm-mvhjplyii6.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1628"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TJpSpjUgtD8EDViUMnm6IWnfrGNjbZgGtsvN+qplX4E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 02:04:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TJpSpjUgtD8EDViUMnm6IWnfrGNjbZgGtsvN+qplX4E="
+        }
+      ]
+    }
+  ]
+}
