@@ -1,0 +1,179 @@
+﻿@page "/todo"
+
+@using System.Text.RegularExpressions
+@using BlazorHybridApp.Handle.Models
+@using BlazorHybridApp.Handle.Services
+@inject IItemService ItemService
+
+<h3>Todo List</h3>
+
+<div class="input-group mb-3" style="max-width: 400px;">
+    <input @bind="newItem" @bind:event="oninput"
+           class="form-control"
+           placeholder="Enter a new todo item" />
+    <button class="btn btn-primary" @onclick="AddItemAsync">Add</button>
+</div>
+
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger" role="alert">
+        @errorMessage
+    </div>
+}
+
+<h4>Todo</h4>
+@if (groupedItems != null && groupedItems.ContainsKey(false) && groupedItems[false].Any())
+{
+    @foreach (var item in groupedItems[false])
+    {
+        <div class="mb-2">
+            <input type="checkbox"
+                   class="form-check-input"
+                   @onclick="() => OnCheckboxChanged(item, true)" />
+            <span class="ms-2">@item.Title</span>
+            <button class="btn btn-danger btn-sm ms-2" @onclick="() => DeleteItemAsync(item.Id)">Delete</button>
+        </div>
+    }
+}
+else
+{
+    <p>No todo items.</p>
+}
+
+<h4>Done</h4>
+@if (groupedItems != null && groupedItems.ContainsKey(true) && groupedItems[true].Any())
+{
+    @foreach (var item in groupedItems[true])
+    {
+        <div class="mb-2">
+            <input type="checkbox"
+                   class="form-check-input"
+                   checked
+                   @onclick="() => OnCheckboxChanged(item, false)" />
+            <span class="ms-2">@item.Title</span>
+            <button class="btn btn-danger btn-sm ms-2" @onclick="() => DeleteItemAsync(item.Id)">Delete</button>
+        </div>
+    }
+}
+else
+{
+    <p>No done items.</p>
+}
+
+@code {
+    private string newItem = string.Empty;
+
+    private string errorMessage = string.Empty;
+
+    private Dictionary<bool, List<Item>> groupedItems = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadItemsAsync();
+    }
+
+    private async Task LoadItemsAsync()
+    {
+        try
+        {
+            var result = await ItemService.GetAllItems();
+            if (result == null || !result.Any() ||
+               ((!result.ContainsKey(false) || !result[false].Any()) &&
+                 (!result.ContainsKey(true) || !result[true].Any())))
+            {
+                errorMessage = string.Empty;
+            }
+            groupedItems = result;
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error loading items: {ex.Message}";
+        }
+    }
+
+    private async Task AddItemAsync()
+    {
+        try
+        {
+            errorMessage = string.Empty;
+            ValidateInput(newItem);
+            bool added = await ItemService.AddItem(newItem);
+            if (!added)
+            {
+                errorMessage = "Failed to add new item.";
+            }
+            else
+            {
+                newItem = string.Empty;
+                await LoadItemsAsync();
+            }
+        }
+        catch (IllegalCharactersException ex)
+        {
+            errorMessage = ex.Message;
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Unexpected error: {ex.Message}";
+        }
+    }
+
+    private async Task DeleteItemAsync(int id)
+    {
+        try
+        {
+            errorMessage = string.Empty;
+            bool deleted = await ItemService.DeleteItem(id);
+            if (!deleted)
+            {
+                errorMessage = "Failed to delete item.";
+            }
+            else
+            {
+                await LoadItemsAsync();
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error deleting item: {ex.Message}";
+        }
+    }
+
+    private void ValidateInput(string input)
+    {
+        if (string.IsNullOrWhiteSpace(input))
+        {
+            throw new IllegalCharactersException("Please enter a non-empty todo item.");
+        }
+        if (Regex.IsMatch(input, "[@#$%]"))
+        {
+            throw new IllegalCharactersException("Special characters (@, #, $, %) are not allowed.");
+        }
+    }
+
+    private async Task OnCheckboxChanged(Item item, bool newIsDone)
+    {
+        try
+        {
+            errorMessage = string.Empty;
+            bool success = await ItemService.UpdateItemIsDone(item.Id, newIsDone);
+            if (!success)
+            {
+                errorMessage = "Failed to update item status.";
+            }
+            else
+            {
+                await LoadItemsAsync();
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error updating item: {ex.Message}";
+        }
+    }
+
+    public class IllegalCharactersException : Exception
+    {
+        public IllegalCharactersException(string message) : base(message) { }
+    }
+}

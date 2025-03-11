@@ -1,0 +1,55 @@
+﻿@page "/calculator"
+
+<h3>Calculator</h3>
+
+<!-- TODO: Implement the calculator's GUI -->
+<div>
+    <input @bind="input1" placeholder="Enter first number" />
+    <input @bind="input2" placeholder="Enter second number" />
+
+    <button @onclick="Add">Add</button>
+    <button @onclick="Subtract">Subtract</button>
+    <button @onclick="Multiply">Multiply</button>
+    <button @onclick="Divide">Divide</button>
+
+    <div>
+        <span>Result: @result</span>
+    </div>
+</div>
+
+@code {
+    private double input1;
+    private double input2;
+    private double result;
+
+    private void Add()
+    {
+        // TODO: Add exception handling for invalid input
+        result = input1 + input2;
+    }
+
+    private void Subtract()
+    {
+        // TODO: Add exception handling for invalid input
+        result = input1 - input2;
+    }
+
+    private void Multiply()
+    {
+        // TODO: Add exception handling for invalid input
+        result = input1 * input2;
+    }
+
+    private void Divide()
+    {
+        // TODO: Add exception handling for division by zero and invalid input
+        if (input2 != 0)
+        {
+            result = input1 / input2;
+        }
+        else
+        {
+            // TODO: Handle divide by zero exception
+        }
+    }
+}
