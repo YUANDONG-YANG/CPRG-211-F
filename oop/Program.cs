@@ -13,10 +13,12 @@ namespace oop
             // Lab 1: Creating Classes
             // CreatingClasses.Run();
             // Lab 2: Inheritance
-            Inheritance.Run();
+            // Inheritance.Run();
             // Lab 3: Interfaces and Abstract Classes
             // AnimalAbstract.Run();
             // AnimalInterface.Run();
+            // Lab 3: Exception
+            ExceptionLab.Run();
         }
     }
 }
