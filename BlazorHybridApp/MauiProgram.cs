@@ -24,6 +24,7 @@ public static class MauiProgram
         builder.Services.AddTransient<IItemService, ItemService>();
         builder.Services.AddTransient<ICalculatorService, CalculatorService>();
 
+
 		return builder.Build();
 	}
 }
