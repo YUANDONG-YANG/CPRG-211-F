@@ -67,6 +67,11 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Handle\Constant\" />
+      <Folder Include="Handle\Dao\" />
+      <Folder Include="Handle\Exception\" />
+      <Folder Include="Handle\Models\" />
+      <Folder Include="Handle\Service\" />
       <Folder Include="Properties\Raw\" />
     </ItemGroup>
 

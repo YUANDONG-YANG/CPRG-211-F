@@ -1,6 +1,4 @@
 ﻿@page "/calculator"
-@using BlazorHybridApp.Handle.Service
-@inject ICalculatorService CalculatorService
 
 <div class="container mt-3">
     <h2 class="text-success">Blazor Calculator</h2>
@@ -84,7 +82,7 @@
                 return;
             }
 
-            result = await CalculatorService.Calculate(num1, num2, operation);
+            result = await Calculate(num1, num2, operation);
         }
         catch (NonNumericInputException ex)
         {
@@ -104,4 +102,38 @@
     private async Task Subtract() => await Calculate(OperationEnum.Subtract);
     private async Task Multiply() => await Calculate(OperationEnum.Multiply);
     private async Task Divide() => await Calculate(OperationEnum.Divide);
+
+    private enum OperationEnum
+    {
+        Add,
+
+        Subtract,
+
+        Multiply,
+
+        Divide
+    }
+ 
+ 
+        private Task<double> Calculate(double number1, double number2, OperationEnum operation)
+        {
+            switch (operation)
+            {
+                case OperationEnum.Add:
+                    return Task.FromResult(number1 + number2);
+                case OperationEnum.Subtract:
+                    return Task.FromResult(number1 - number2);
+                case OperationEnum.Multiply:
+                    return Task.FromResult(number1 * number2);
+                case OperationEnum.Divide:
+                    if (number2 == 0)
+                    {
+                        throw new DivideByZeroException("Division by zero is not allowed.");
+                    }
+                    return Task.FromResult(number1 / number2);
+                default:
+                    throw new ArgumentException("Invalid operation.");
+            }
+        }
+
 }

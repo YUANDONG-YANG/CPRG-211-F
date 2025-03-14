@@ -1,9 +1,6 @@
 ﻿@page "/todo"
-
+@using System.Globalization;
 @using System.Text.RegularExpressions
-@using BlazorHybridApp.Handle.Models
-@using BlazorHybridApp.Handle.Service
-@inject IItemService ItemService
 
 <h3>Todo List</h3>
 
@@ -76,7 +73,7 @@ else
     {
         try
         {
-            var result = await ItemService.GetAllItems();
+            var result = await GetAllItems();
             if (result == null || !result.Any() ||
                ((!result.ContainsKey(false) || !result[false].Any()) &&
                  (!result.ContainsKey(true) || !result[true].Any())))
@@ -97,7 +94,7 @@ else
         {
             errorMessage = string.Empty;
             ValidateInput(newItem);
-            bool added = await ItemService.AddItem(newItem);
+            bool added = await AddItem(newItem);
             if (!added)
             {
                 errorMessage = "Failed to add new item.";
@@ -123,7 +120,7 @@ else
         try
         {
             errorMessage = string.Empty;
-            bool deleted = await ItemService.DeleteItem(id);
+            bool deleted = await DeleteItem(id);
             if (!deleted)
             {
                 errorMessage = "Failed to delete item.";
@@ -156,7 +153,7 @@ else
         try
         {
             errorMessage = string.Empty;
-            bool success = await ItemService.UpdateItemIsDone(item.Id, newIsDone);
+            bool success = await UpdateItemIsDone(item.Id, newIsDone);
             if (!success)
             {
                 errorMessage = "Failed to update item status.";
@@ -176,4 +173,179 @@ else
     {
         public IllegalCharactersException(string message) : base(message) { }
     }
+
+
+
+        private int nextId = 1;
+
+        public const string ITEMS_FILE = "items.csv";
+
+        public class DuplicateItemException : System.Exception
+        {
+            public DuplicateItemException(string message)
+                : base(message)
+            {
+            }
+        }
+        public Task<Dictionary<bool, List<Item>>> GetAllItems()
+        {
+            List<Item> items = LoadItemsFromCsv();
+
+            var groupedItems = items
+                .GroupBy(item => item.IsDone)
+                .ToDictionary(group => group.Key, group => group.ToList());
+
+            return Task.FromResult(groupedItems);
+        }
+
+        public Item GetItemById(int id)
+        {
+            List<Item> items = LoadItemsFromCsv();
+            return items.FirstOrDefault(x => x.Id == id);
+        }
+
+        public Task<Boolean> AddItem(string title)
+        {
+            List<Item> items = LoadItemsFromCsv();
+            if (items.Any(i => i.Title.Equals(title, StringComparison.OrdinalIgnoreCase)))
+            {
+                throw new DuplicateItemException($"An item with title '{title}' already exists.");
+            }
+            items.Add(new Item(nextId++, title, false));
+            Boolean isSave = SaveItemsIntoCsv(items);
+            return Task.FromResult(isSave);
+        }
+
+        public Task<bool> DeleteItem(int id)
+        {
+            List<Item> items = LoadItemsFromCsv();
+            var item = items.FirstOrDefault(x => x.Id == id);
+            if (item != null)
+            {
+                items.Remove(item);
+                return Task.FromResult(SaveItemsIntoCsv(items));
+            }
+            return Task.FromResult(false);
+        }
+
+        public Task<bool> UpdateItemIsDone(int id, bool isDone)
+        {
+            List<Item> items = LoadItemsFromCsv();
+            var item = items.FirstOrDefault(x => x.Id == id);
+            if (item != null)
+            {
+                item.IsDone = isDone;
+                return Task.FromResult(SaveItemsIntoCsv(items));
+            }
+            return Task.FromResult(false);
+        }
+
+        public List<Item> LoadItemsFromCsv()
+        {
+            var items = new List<Item>();
+            var filePath = Path.Combine(ITEMS_FILE);
+            if (!File.Exists(filePath))
+            {
+                return items;
+            }
+            using var stream = FileSystem.OpenAppPackageFileAsync(ITEMS_FILE).GetAwaiter().GetResult();
+            using var reader = new StreamReader(stream);
+
+            string? line;
+            while ((line = reader.ReadLine()) != null)
+            {
+                if (string.IsNullOrWhiteSpace(line))
+                    continue;
+
+                var columns = line.Split(',')
+                                  .Select(c => c.Trim())
+                                  .ToArray();
+
+                if (columns.Length < 3)
+                    continue;
+
+                if (!int.TryParse(columns[0], out var id))
+                {
+                    continue;
+                }
+
+                var title = columns[1];
+
+                bool isDone = bool.TryParse(columns[2], out var parsedBool) ? parsedBool : false;
+
+                try
+                {
+                    var item = new Item(id, title, isDone);
+                    items.Add(item);
+                }
+                catch (System.Exception ex)
+                {
+                    Console.WriteLine("loading Items.csv error: {Message}", ex.Message);
+                }
+
+            }
+            return items;
+        }
+        public bool SaveItemsIntoCsv(List<Item> items)
+        {
+            try
+            {
+                string filePath = ITEMS_FILE;
+
+                string? directory = Path.GetDirectoryName(filePath);
+
+                if (!string.IsNullOrEmpty(directory) && !Directory.Exists(directory))
+                {
+                    Directory.CreateDirectory(directory);
+                    Console.WriteLine("Created directory: {Directory}", directory);
+                }
+
+                if (File.Exists(filePath))
+                {
+                    File.Delete(filePath);
+                    Console.WriteLine("deleted firstly：{FilePath}", filePath);
+                }
+
+                using (var writer = new StreamWriter(filePath, false))
+                {
+                    writer.WriteLine("Id,Title,IsDone");
+
+                    foreach (var item in items)
+                    {
+                        string line = string.Format(CultureInfo.InvariantCulture, "{0},{1},{2}",
+                                                    item.Id,
+                                                    item.Title,
+                                                    item.IsDone);
+                        writer.WriteLine(line);
+                    }
+                }
+
+                Console.WriteLine("save items.csv successfully：{FilePath}", filePath);
+                return true;
+            }
+            catch (System.Exception ex)
+            {
+                Console.WriteLine("save items.csv file error !");
+                return false;
+            }
+        }
+
+    public class Item
+    {
+        public int Id { get; set; }
+
+        public string Title { get; set; }
+
+        public bool IsDone { get; set; }
+        public static Item? Null { get; internal set; }
+
+        public Item(int id, string title, bool isDone)
+        {
+            Id = id;
+            Title = title;
+            IsDone = isDone;
+        }
+
+    }
+
 }
