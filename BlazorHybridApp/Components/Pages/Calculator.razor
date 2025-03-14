@@ -1,55 +1,107 @@
 ﻿@page "/calculator"
+@using BlazorHybridApp.Handle.Service
+@inject ICalculatorService CalculatorService
 
-<h3>Calculator</h3>
+<div class="container mt-3">
+    <h2 class="text-success">Blazor Calculator</h2>
 
-<!-- TODO: Implement the calculator's GUI -->
-<div>
-    <input @bind="input1" placeholder="Enter first number" />
-    <input @bind="input2" placeholder="Enter second number" />
-
-    <button @onclick="Add">Add</button>
-    <button @onclick="Subtract">Subtract</button>
-    <button @onclick="Multiply">Multiply</button>
-    <button @onclick="Divide">Divide</button>
-
-    <div>
-        <span>Result: @result</span>
+    <div class="mb-3">
+        <label>Enter First Number</label>
+        <InputText @bind-Value="input1" class="form-control" />
     </div>
+
+    <div class="mb-3">
+        <label>Enter Second Number</label>
+        <InputText @bind-Value="input2" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Result</label>
+        <input type="text" class="form-control" readonly value="@result" />
+    </div>
+
+    <div class="mb-3">
+        <button class="btn btn-success me-1" @onclick="Add">Add (+)</button>
+        <button class="btn btn-primary me-1" @onclick="Subtract">Subtract (-)</button>
+        <button class="btn btn-warning me-1" @onclick="Multiply">Multiply (X)</button>
+        <button class="btn btn-danger me-1" @onclick="Divide">Divide (/)</button>
+        <button class="btn btn-secondary" @onclick="ClearAll">Clear All</button>
+    </div>
+
+    @if (!string.IsNullOrWhiteSpace(errorMessage))
+    {
+        <div class="alert alert-danger" role="alert">
+            @errorMessage
+        </div>
+    }
 </div>
 
 @code {
-    private double input1;
-    private double input2;
+    private String? input1;
+    private String? input2;
     private double result;
+    private string? errorMessage;
 
-    private void Add()
+
+    private void ClearAll()
     {
-        // TODO: Add exception handling for invalid input
-        result = input1 + input2;
+        input1 = string.Empty;
+        input2 = string.Empty;
+        result = 0;
+        errorMessage = string.Empty;
     }
 
-    private void Subtract()
+    public class NonNumericInputException : Exception
     {
-        // TODO: Add exception handling for invalid input
-        result = input1 - input2;
-    }
-
-    private void Multiply()
-    {
-        // TODO: Add exception handling for invalid input
-        result = input1 * input2;
-    }
-
-    private void Divide()
-    {
-        // TODO: Add exception handling for division by zero and invalid input
-        if (input2 != 0)
+        public NonNumericInputException() : base("Invalid input: Please enter numeric values only.")
         {
-            result = input1 / input2;
+        }
+    }
+
+    private  Task<double> ValidInputAndTransIntoDouble(string? input)
+    {
+        if (double.TryParse(input, out double number))
+        {
+            return  Task.FromResult(number);
         }
         else
         {
-            // TODO: Handle divide by zero exception
+            throw new NonNumericInputException();
         }
     }
+
+    private async Task Calculate(OperationEnum operation)
+    {
+        errorMessage = string.Empty;
+        try
+        {
+            double num1 = await ValidInputAndTransIntoDouble(input1);
+            double num2 = await ValidInputAndTransIntoDouble(input2);
+
+            if (operation == OperationEnum.Divide && num2 == 0)
+            {
+                errorMessage = "Division by zero is not allowed.";
+                return;
+            }
+
+            result = await CalculatorService.Calculate(num1, num2, operation);
+        }
+        catch (NonNumericInputException ex)
+        {
+            errorMessage = ex.Message;
+        }
+        catch (DivideByZeroException ex)
+        {
+            errorMessage = ex.Message;
+        }
+        catch (Exception ex)
+        {
+            errorMessage = "An error occurred: " + ex.Message;
+        }
+    }
+
+    private async Task Add() => await Calculate(OperationEnum.Add);
+    private async Task Subtract() => await Calculate(OperationEnum.Subtract);
+    private async Task Multiply() => await Calculate(OperationEnum.Multiply);
+    private async Task Divide() => await Calculate(OperationEnum.Divide);
 }

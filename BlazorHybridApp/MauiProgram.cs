@@ -1,4 +1,4 @@
-﻿using BlazorHybridApp.Handle.Services;
+﻿using BlazorHybridApp.Handle.Service;
 using BlazorHybridApp.Handle.Tool;
 using Microsoft.Extensions.Logging;
 
@@ -22,11 +22,7 @@ public static class MauiProgram
         builder.Services.AddTransient<IItemsSaver, ItemsSaver>();
 
         builder.Services.AddTransient<IItemService, ItemService>();
-
-#if DEBUG
-        builder.Services.AddBlazorWebViewDeveloperTools();
-		builder.Logging.AddDebug();
-#endif
+        builder.Services.AddTransient<ICalculatorService, CalculatorService>();
 
 		return builder.Build();
 	}

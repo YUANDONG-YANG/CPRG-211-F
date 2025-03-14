@@ -1,7 +1,7 @@
 ﻿using BlazorHybridApp.Handle.Exception;
 using BlazorHybridApp.Handle.Models;
 using BlazorHybridApp.Handle.Tool;
-namespace BlazorHybridApp.Handle.Services;
+namespace BlazorHybridApp.Handle.Service;
 
 
 public interface IItemService
