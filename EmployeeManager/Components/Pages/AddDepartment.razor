@@ -1,0 +1,175 @@
+﻿@page "/AddDepartment"
+@inject ManagerDbAccessor managerDbAccessor
+@inject NavigationManager NavigationManager
+@using EmployeeManager.Models
+@using EmployeeManager.Services
+
+<div class="page-container">
+    <div class="card form-card">
+        <div class="card-header">
+            <h3 class="card-title">
+                <i class="bi bi-building-add me-2"></i>Add New Department
+            </h3>
+        </div>
+        <div class="card-body">
+            @if (errorMessage != null)
+            {
+                <div class="alert alert-danger d-flex align-items-center" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                    <div>@errorMessage</div>
+                </div>
+            }
+
+            <EditForm Model="@department" OnValidSubmit="Save">
+                <DataAnnotationsValidator />
+                <ValidationSummary class="text-danger mb-4" />
+
+                <div class="form-group mb-4">
+                    <label class="form-label fw-semibold">Department Name</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-tag"></i></span>
+                        <InputText class="form-control" @bind-Value="department.dept_name" placeholder="Enter department name" />
+                    </div>
+                    <small class="form-text text-muted">Enter a unique name for the department</small>
+                </div>
+
+                <div class="d-flex justify-content-between mt-4">
+                    <button type="button" class="btn btn-outline-secondary" @onclick="GoBack">
+                        <i class="bi bi-arrow-left me-1"></i> Cancel
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-save me-1"></i> Save Department
+                    </button>
+                </div>
+            </EditForm>
+        </div>
+    </div>
+
+    <div class="card mt-4 tips-card">
+        <div class="card-header bg-light">
+            <h5 class="mb-0">
+                <i class="bi bi-info-circle me-2"></i>Tips for Adding Departments
+            </h5>
+        </div>
+        <div class="card-body">
+            <ul class="tips-list">
+                <li>Department names should be clear and descriptive</li>
+                <li>Use consistent naming conventions for all departments</li>
+                <li>Avoid abbreviations that may be confusing to new employees</li>
+                <li>Consider the organizational structure when creating departments</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<style>
+    .page-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 1.5rem 1rem;
+    }
+
+    .form-card {
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: none;
+        margin-bottom: 1.5rem;
+    }
+
+    .card-header {
+        background: linear-gradient(to right, #4b79a1, #283e51);
+        color: white;
+        border-top-left-radius: 8px !important;
+        border-top-right-radius: 8px !important;
+        padding: 1rem 1.25rem;
+    }
+
+    .card-title {
+        margin-bottom: 0;
+        font-weight: 600;
+    }
+
+    .tips-card .card-header {
+        background: #f8f9fa;
+        color: #495057;
+    }
+
+    .tips-list {
+        padding-left: 1.5rem;
+    }
+
+        .tips-list li {
+            margin-bottom: 0.5rem;
+            color: #495057;
+        }
+
+    .input-group {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    }
+
+    .form-control:focus {
+        border-color: #4b79a1;
+        box-shadow: 0 0 0 0.25rem rgba(75, 121, 161, 0.25);
+    }
+
+    .btn-primary {
+        background-color: #4b79a1;
+        border-color: #4b79a1;
+    }
+
+        .btn-primary:hover {
+            background-color: #3d6485;
+            border-color: #3d6485;
+        }
+</style>
+
+@code {
+    private Department department = new();
+    private string errorMessage;
+
+    private void Save()
+    {
+        try
+        {
+            if (department == null)
+            {
+                errorMessage = "Department data is not available.";
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(department.dept_name))
+            {
+                errorMessage = "Department name cannot be empty.";
+                return;
+            }
+
+            // check department name uniqueness
+            var existingDepartments = managerDbAccessor.GetDepartments();
+            if (existingDepartments != null && existingDepartments.Any(d =>
+            d.dept_name.Equals(department.dept_name, StringComparison.OrdinalIgnoreCase)))
+            {
+                errorMessage = "A department with this name already exists.";
+                return;
+            }
+
+            managerDbAccessor.AddDepartment(department);
+            NavigationManager.NavigateTo("/department");
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Failed to add department: {ex.Message}";
+        }
+    }
+
+    private void GoBack()
+    {
+        try
+        {
+            NavigationManager.NavigateTo("/department");
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Failed to navigate: {ex.Message}";
+        }
+    }
+}

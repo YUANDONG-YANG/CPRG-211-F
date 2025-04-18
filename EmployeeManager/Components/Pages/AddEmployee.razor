@@ -1,0 +1,222 @@
+@page "/addEmployee"
+@using System.Text.RegularExpressions
+@using EmployeeManager.Services
+@using EmployeeManager.Models
+@inject ManagerDbAccessor managerDbAccessor
+@inject NavigationManager NavigationManager
+
+<div class="page-container">
+    <div class="card form-card">
+        <div class="card-header">
+            <h3 class="card-title">
+                <i class="bi bi-person-plus-fill me-2"></i>Add New Employee
+            </h3>
+        </div>
+        <div class="card-body">
+            @if (!string.IsNullOrEmpty(errorMessage))
+            {
+                <div class="alert alert-danger d-flex align-items-center" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                    <div>@errorMessage</div>
+                </div>
+            }
+
+            <EditForm Model="@employee" OnValidSubmit="HandleValidSubmit">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">First Name</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                <InputText class="form-control" @bind-Value="employee.firstname" placeholder="Enter first name" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">Last Name</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                <InputText class="form-control" @bind-Value="employee.lastname" placeholder="Enter last name" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label fw-semibold">Department</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-building"></i></span>
+                        <select class="form-select" @bind="employee.dept_id">
+                            <option value="0" selected>Select a department</option>
+                            @foreach (var department in departments)
+                            {
+                                <option value=@department.dept_id>@department.dept_name</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">Phone Number</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                                <InputText class="form-control" @bind-Value="employee.phone" placeholder="Enter digits only" />
+                            </div>
+                            <small class="form-text text-muted">Digits only, no spaces or special characters</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">Email</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                <InputText class="form-control" @bind-Value="employee.email" placeholder="example@company.com" />
+                            </div>
+                            <small class="form-text text-muted">Must be a valid email format</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label fw-semibold">Wage Grade</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-cash"></i></span>
+                        <select class="form-select" @bind="employee.grade_id">
+                            <option value="0" selected>Select a wage grade</option>
+                            @foreach (var wage in wages)
+                            {
+                                <option value=@wage.grade_id>@wage.grade_name - Base: $@wage.base_wage, Bonus: @wage.bonus_percent%</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between mt-4">
+                    <button type="button" class="btn btn-outline-secondary" @onclick="Cancel">
+                        <i class="bi bi-arrow-left me-1"></i> Cancel
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-save me-1"></i> Save Employee
+                    </button>
+                </div>
+            </EditForm>
+        </div>
+    </div>
+</div>
+
+<style>
+    .page-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 1.5rem 1rem;
+    }
+
+    .form-card {
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: none;
+    }
+
+    .card-header {
+        background: linear-gradient(to right, #2193b0, #6dd5ed);
+        color: white;
+        border-top-left-radius: 8px !important;
+        border-top-right-radius: 8px !important;
+        padding: 1rem 1.25rem;
+    }
+
+    .card-title {
+        margin-bottom: 0;
+        font-weight: 600;
+    }
+
+    .input-group {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    }
+
+    .form-control:focus, .form-select:focus {
+        border-color: #2193b0;
+        box-shadow: 0 0 0 0.25rem rgba(33, 147, 176, 0.25);
+    }
+
+    .btn-primary {
+        background-color: #2193b0;
+        border-color: #2193b0;
+    }
+
+        .btn-primary:hover {
+            background-color: #1b7d94;
+            border-color: #1b7d94;
+        }
+</style>
+
+@code {
+    private Employee employee = new();
+    private List<Department> departments = new();
+    private List<Wage> wages = new();
+    private string errorMessage;
+
+    protected override void OnInitialized()
+    {
+        departments = managerDbAccessor.GetDepartments();
+        wages = managerDbAccessor.GetWages();
+    }
+
+    private void HandleValidSubmit()
+    {
+        try
+        {
+            // Validate employee object
+            if (employee == null)
+                throw new ArgumentNullException(nameof(employee), "Employee data must be provided.");
+            if (string.IsNullOrWhiteSpace(employee.firstname))
+                throw new Exception("Employee first name must be provided.");
+            if (string.IsNullOrWhiteSpace(employee.lastname))
+                throw new Exception("Employee last name must be provided.");
+            if (string.IsNullOrWhiteSpace(employee.phone))
+                throw new Exception("Employee phone number must be provided.");
+            if (string.IsNullOrWhiteSpace(employee.email))
+                throw new Exception("Employee email must be provided.");
+            if (employee.dept_id <= 0)
+                throw new Exception("Department must be selected.");
+            if (employee.grade_id <= 0)
+                throw new Exception("Wage grade must be selected.");
+            if (!ValidEmail(employee.email))
+            {
+                throw new Exception("Email has invalid format.");
+            }
+            if (!ValidPhone(employee.phone))
+            {
+                throw new Exception("Phone number has invalid format. Digits only are allowed.");
+            }
+            managerDbAccessor.AddEmployee(employee);
+            NavigationManager.NavigateTo("/employee");
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Failed to add employee: {ex.Message}";
+        }
+    }
+
+    // validate email address format with regular expression
+    private bool ValidEmail(string email)
+    {
+        Regex pattern = new Regex(@"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$");
+        return pattern.IsMatch(email);
+    }
+
+    // validate phone number format with regular expression
+    private bool ValidPhone(string phone)
+    {
+        Regex pattern = new Regex(@"^\d+$");
+        return pattern.IsMatch(phone);
+    }
+
+    private void Cancel()
+    {
+        NavigationManager.NavigateTo("/employee");
+    }
+}

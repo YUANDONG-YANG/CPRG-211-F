@@ -1,0 +1,238 @@
+﻿@page "/"
+
+<div class="dashboard-container">
+    <div class="dashboard-header">
+        <div class="header-content">
+            <h1 class="display-4">Welcome to Employee Management System</h1>
+            <p class="lead">A comprehensive solution for managing your organization's workforce</p>
+        </div>
+    </div>
+
+    <div class="quick-stats">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="stat-card bg-primary">
+                    <div class="stat-icon">
+                        <i class="bi bi-building"></i>
+                    </div>
+                    <div class="stat-details">
+                        <h3>Departments</h3>
+                        <p>Manage organizational structure</p>
+                        <a href="department" class="btn btn-light btn-sm mt-2">View Departments</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card bg-success">
+                    <div class="stat-icon">
+                        <i class="bi bi-cash-coin"></i>
+                    </div>
+                    <div class="stat-details">
+                        <h3>Wage Grades</h3>
+                        <p>Administer compensation tiers</p>
+                        <a href="wages" class="btn btn-light btn-sm mt-2">Manage Wages</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card bg-info">
+                    <div class="stat-icon">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <div class="stat-details">
+                        <h3>Employees</h3>
+                        <p>Handle personnel information</p>
+                        <a href="employee" class="btn btn-light btn-sm mt-2">View Employees</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card bg-warning">
+                    <div class="stat-icon">
+                        <i class="bi bi-file-earmark-bar-graph"></i>
+                    </div>
+                    <div class="stat-details">
+                        <h3>Reports</h3>
+                        <p>Generate analytical insights</p>
+                        <a href="employeeWage" class="btn btn-light btn-sm mt-2">Payroll Report</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="system-features mt-4">
+        <div class="card">
+            <div class="card-header bg-light">
+                <h2>System Features</h2>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4><i class="bi bi-check-circle text-success me-2"></i>Department Management</h4>
+                        <p>Create, update, and organize company departments efficiently.</p>
+
+                        <h4><i class="bi bi-check-circle text-success me-2"></i>Wage Grade Configuration</h4>
+                        <p>Define compensation structures with base wages and bonus percentages.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h4><i class="bi bi-check-circle text-success me-2"></i>Employee Records</h4>
+                        <p>Maintain comprehensive employee information and employment history.</p>
+
+                        <h4><i class="bi bi-check-circle text-success me-2"></i>Payroll Reporting</h4>
+                        <p>Generate detailed wage reports for financial planning and analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 作者信息和GitHub链接 -->
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="footer-content">
+                <p class="mb-2">
+                    <i class="bi bi-code-slash me-1"></i> Developed by <span class="author-name">YUANDONG YANG</span>
+                </p>
+                <p class="mb-2">
+                    <i class="bi bi-person-badge me-1"></i> Student ID: <span class="student-id">000949205</span>
+                </p>
+                <p>
+                    <a href="https://github.com/YUANDONG-YANG/CPRG-211-F" target="_blank" class="github-link rainbow-text">
+                        <i class="bi bi-github me-1"></i> View on GitHub
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<style>
+    .dashboard-container {
+        padding: 1rem;
+    }
+
+    .dashboard-header {
+        background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
+        color: white;
+        border-radius: 8px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-content h1 {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    .stat-card {
+        display: flex;
+        border-radius: 8px;
+        padding: 1.5rem;
+        color: white;
+        height: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+    .stat-icon {
+        font-size: 2.5rem;
+        margin-right: 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .stat-details h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    .stat-details p {
+        opacity: 0.9;
+        margin-bottom: 0.5rem;
+    }
+
+    .system-features .card {
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .system-features h4 {
+        font-size: 1.1rem;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .system-features p {
+        margin-left: 1.8rem;
+        color: #666;
+    }
+
+    /* 页脚样式 */
+    .footer {
+        padding: 1.5rem 0;
+        border-top: 1px solid #eee;
+        text-align: center;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .author-name {
+        font-weight: 600;
+        color: #4b6cb7;
+    }
+
+    .student-id {
+        font-weight: 600;
+        color: #11998e;
+    }
+
+    .github-link {
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    /* 彩虹文字效果 */
+    .rainbow-text {
+        background-image: linear-gradient(to right, #ff0000, /* 红 */
+        #ff8000, /* 橙 */
+        #ffff00, /* 黄 */
+        #00ff00, /* 绿 */
+        #0000ff, /* 蓝 */
+        #4b0082, /* 靛 */
+        #9400d3 /* 紫 */
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: rainbow-animation 5s linear infinite;
+        background-size: 200% auto;
+    }
+
+    @keyframes rainbow-animation {
+        0%
+
+    {
+        background-position: 0% center;
+    }
+
+    100% {
+        background-position: 200% center;
+    }
+
+    }
+</style>

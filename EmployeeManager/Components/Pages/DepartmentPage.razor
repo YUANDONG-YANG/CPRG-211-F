@@ -1,0 +1,213 @@
+﻿@page "/department"
+@using EmployeeManager.Services
+@using EmployeeManager.Models
+@inject ManagerDbAccessor managerDbAccessor
+@inject NavigationManager NavigationManager
+
+<div class="page-container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h3 class="mb-0"><i class="bi bi-building me-2"></i>Departments</h3>
+            <p class="text-muted mb-0">Manage your organization's departments</p>
+        </div>
+        <button class="btn btn-success" @onclick="AddDepartment">
+            <i class="bi bi-plus-circle me-1"></i> Add Department
+        </button>
+    </div>
+
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="alert alert-danger d-flex align-items-center mb-4" role="alert">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i>
+            <div>@errorMessage</div>
+            <button type="button" class="btn-close ms-auto" @onclick="ClearError" aria-label="Close"></button>
+        </div>
+    }
+
+    <div class="card">
+        <div class="card-body p-0">
+            @if (departments.Count == 0)
+            {
+                <div class="text-center py-5">
+                    <i class="bi bi-inbox text-muted" style="font-size: 3rem;"></i>
+                    <h5 class="mt-3">No Departments Found</h5>
+                    <p class="text-muted">Start by adding your first department</p>
+                    <button class="btn btn-primary mt-2" @onclick="AddDepartment">
+                        <i class="bi bi-plus-circle me-1"></i> Add Department
+                    </button>
+                </div>
+            }
+            else
+            {
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th class="ps-4">ID</th>
+                                <th>Department Name</th>
+                                <th class="text-center">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var dept in departments)
+                            {
+                                <tr>
+                                    <td class="ps-4">@dept.dept_id</td>
+                                    <td>@dept.dept_name</td>
+                                    <td>
+                                        <div class="d-flex justify-content-center">
+                                            <button class="btn btn-sm btn-outline-primary me-2" @onclick="@(() => EditDepartment(dept.dept_id))">
+                                                <i class="bi bi-pencil"></i> Edit
+                                            </button>
+                                            <button class="btn btn-sm btn-outline-danger" @onclick="@(() => ConfirmDelete(dept))">
+                                                <i class="bi bi-trash"></i> Delete
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@if (showDeleteConfirm)
+{
+    <div class="modal-backdrop fade show"></div>
+    <div class="modal fade show d-block" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirm Delete</h5>
+                    <button type="button" class="btn-close" @onclick="() => showDeleteConfirm = false" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to delete department "<strong>@departmentToDelete?.dept_name</strong>"?</p>
+                    <p class="text-danger"><small>This action cannot be undone.</small></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" @onclick="() => showDeleteConfirm = false">Cancel</button>
+                    <button type="button" class="btn btn-danger" @onclick="ConfirmedDelete">
+                        <i class="bi bi-trash me-1"></i> Delete
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<style>
+    .page-container {
+        padding: 1.5rem 1rem;
+    }
+
+    .card {
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        border: none;
+        overflow: hidden;
+    }
+
+    .table thead th {
+        font-weight: 600;
+        border-top: none;
+        border-bottom-width: 1px;
+    }
+
+    .table tbody tr:last-child td {
+        border-bottom: none;
+    }
+
+    .btn-success {
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+
+        .btn-success:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+
+    .btn-outline-primary {
+        color: #007bff;
+        border-color: #007bff;
+    }
+
+        .btn-outline-primary:hover {
+            background-color: #007bff;
+            color: white;
+        }
+
+    .btn-outline-danger {
+        color: #dc3545;
+        border-color: #dc3545;
+    }
+
+        .btn-outline-danger:hover {
+            background-color: #dc3545;
+            color: white;
+        }
+</style>
+
+@code {
+    private List<Department> departments = new();
+    private string errorMessage;
+    private bool showDeleteConfirm = false;
+    private Department departmentToDelete;
+
+    protected override void OnInitialized()
+    {
+        LoadDepartments();
+    }
+
+    private void LoadDepartments()
+    {
+        try
+        {
+            departments = managerDbAccessor.GetDepartments();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Failed to load departments: {ex.Message}";
+        }
+    }
+
+    private void AddDepartment()
+    {
+        NavigationManager.NavigateTo("/addDepartment");
+    }
+
+    private void EditDepartment(int id)
+    {
+        NavigationManager.NavigateTo($"/editDepartment/{id}");
+    }
+
+    private void ConfirmDelete(Department dept)
+    {
+        departmentToDelete = dept;
+        showDeleteConfirm = true;
+    }
+
+    private void ConfirmedDelete()
+    {
+        try
+        {
+            managerDbAccessor.DeleteDepartment(departmentToDelete.dept_id);
+            showDeleteConfirm = false;
+            LoadDepartments();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error deleting department: {ex.Message}";
+            showDeleteConfirm = false;
+        }
+    }
+
+    private void ClearError()
+    {
+        errorMessage = null;
+    }
+}
